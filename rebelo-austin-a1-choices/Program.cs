@@ -4,15 +4,15 @@
 
 // Displays title and asks for a name
 Console.WriteLine("The Ultimate Short Quest\n");
-Console.WriteLine("Enter your name, adventuer.");
+Console.WriteLine("Enter your name, adventurer.");
 
 // Gets user input for a name and displays it
 string name = Console.ReadLine();
 Console.WriteLine($"Welcome,{name}!\n");
 
 // Ask user to select a class
-Console.WriteLine("To begin, please select a class\n");
-Console.WriteLine("1. Warrior, equiped with a sword and shield");
+Console.WriteLine("To begin, please select a class.\n");
+Console.WriteLine("1. Warrior, equipped with a sword and shield");
 Console.WriteLine("2. Ranger, has a quiver containing normal and explosive arrows");
 Console.WriteLine("3. Mage, wields fire and ice magic");
 int playerClass = int.Parse(Console.ReadLine());
@@ -40,7 +40,7 @@ if (playerClass == 1)
     else if (warriorAction == 2)
     {
         Console.WriteLine();
-        Console.WriteLine("You raise your shield, preparing for the kings attack.\nThe King of Frost summons ice spikes from beneath you, rendering your shield useless.\nObviously it wouldn't be that simple to beat the king\n");
+        Console.WriteLine("You raise your shield, preparing for the kings attack.\nThe King of Frost summons ice spikes from beneath you, rendering your shield useless.\nObviously it wouldn't be that simple to beat the king.\n");
         Console.WriteLine("YOU LOSE!");
     }
 
@@ -90,7 +90,7 @@ else if (playerClass == 3)
     if (mageAction == 1)
     {
         Console.WriteLine();
-        Console.WriteLine("You cast a frostbolt at the king... The King of Frost...\nNothing happens and in response, the king creates a huge wall of ice and drops it on you\n(I hope this wasn't your serious choice.)\n");
+        Console.WriteLine("You cast a frostbolt at the king... The King of Frost...\nNothing happens and in response, the king creates a huge wall of ice and drops it on you.\n(I hope this wasn't your serious choice.)\n");
         Console.WriteLine("YOU LOSE!");
     }
 
@@ -98,7 +98,7 @@ else if (playerClass == 3)
     else if (mageAction == 2)
     {
         Console.WriteLine();
-        Console.WriteLine("You cast a fireball at the king\nThe fireball collides with the king, engulfing him in flames.\nBefore you know it, the king is nothing more than ash.\n");
+        Console.WriteLine("You cast a fireball at the king.\nThe fireball collides with the king, engulfing him in flames.\nBefore you know it, the king is nothing more than ash.\n");
         Console.WriteLine("YOU WIN!");
     }
 
