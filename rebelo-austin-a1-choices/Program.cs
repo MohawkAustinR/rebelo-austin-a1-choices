@@ -61,7 +61,7 @@ else if (playerClass == 2)
     if (rangerAction == 1)
     {
         Console.WriteLine();
-        Console.WriteLine("You fire an arrow straight for the king\nThe king grab the arrow inches before his face, freezing it, and sends it flying back at you!\nThe arrow pierces you through the chest.\n");
+        Console.WriteLine("You fire an arrow straight for the king.\nThe king grab the arrow inches before his face, freezing it, and sends it flying back at you!\nThe arrow pierces you through the chest.\n");
         Console.WriteLine("YOU LOSE!");
     }
 
@@ -70,6 +70,35 @@ else if (playerClass == 2)
     {
         Console.WriteLine();
         Console.WriteLine("You fire an explosive arrow towards the king.\nThe king grabs the arrow inches before his face, though not realising a comically large bomb on the end.\nThe bomb explodes in his face, killing him instantly.\n");
+        Console.WriteLine("YOU WIN!");
+    }
+
+}
+
+// If the user types "3", they play as a 3
+else if (playerClass == 3)
+{
+    Console.WriteLine();
+    Console.WriteLine($"You are {name}, the mage. You are on a quest to defeat the almighty King of Frost!\nYou leave your village and journey the path to the kings fortress... and you've arrived!\n(With such a short walk you'd expect someone to have challenged the king already.)\n");
+    Console.WriteLine("The King of Frost readies himself! Prepare to attack.");
+    Console.WriteLine("Actions\n");
+    Console.WriteLine("1. Frostbolt");
+    Console.WriteLine("2. Fireball");
+    int mageAction = int.Parse(Console.ReadLine());
+
+    // If user types "1", they use a frostbolt and lose
+    if (mageAction == 1)
+    {
+        Console.WriteLine();
+        Console.WriteLine("You cast a frostbolt at the king... The King of Frost...\nNothing happens and in response, the king creates a huge wall of ice and drops it on you\n(I hope this wasn't your serious choice.)\n");
+        Console.WriteLine("YOU LOSE!");
+    }
+
+    // If user types "2", they use a fireball and win
+    else if (mageAction == 2)
+    {
+        Console.WriteLine();
+        Console.WriteLine("You cast a fireball at the king\nThe fireball collides with the king, engulfing him in flames.\nBefore you know it, the king is nothing more than ash.\n");
         Console.WriteLine("YOU WIN!");
     }
 
