@@ -61,7 +61,7 @@ else if (playerClass == 2)
     if (rangerAction == 1)
     {
         Console.WriteLine();
-        Console.WriteLine("You fire an arrow straight for the king.\nThe king grab the arrow inches before his face, freezing it, and sends it flying back at you!\nThe arrow pierces you through the chest.\n");
+        Console.WriteLine("You fire an arrow straight for the king.\nThe king grabs the arrow inches before his face, freezing it, and sends it flying back at you!\nThe arrow pierces you through the chest.\n");
         Console.WriteLine("YOU LOSE!");
     }
 
